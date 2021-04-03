@@ -314,11 +314,13 @@ public:
                     */
 
                 case CLASS_PALADIN:
+                    // weapon skills
                     player->learnSpell(196);	// Axes
                     player->learnSpell(750);	// Plate Mail
                     player->learnSpell(200);	// PoleArms
                     player->learnSpell(197);	// 2H Axe
                     player->learnSpell(199);	// 2H Mace
+                    // class quest skills
                     break;
 
                 case CLASS_SHAMAN:
@@ -339,6 +341,9 @@ public:
                     player->learnSpell(200);	// PoleArms
                     player->learnSpell(199);	// 2H Mace
                     player->learnSpell(227);	// Staves
+
+
+                    player->learnSpell(2458);	// berserk stance
                     break;
 
                 case CLASS_HUNTER:
@@ -401,11 +406,11 @@ public:
             if (sConfigMgr->GetBoolDefault("CustomLogin.SpecialAbility", true))
             {
                 // Learn Specialized Skills
-                player->learnSpell(1784);	// Stealth
-                player->learnSpell(921);	// Pick Pocket
-                player->learnSpell(1804);	// Lockpicking
-                player->learnSpell(11305);	// Sprint (3)
-                player->learnSpell(5384);	// Feign Death
+                //player->learnSpell(1784);	// Stealth
+                //player->learnSpell(921);	// Pick Pocket
+                //player->learnSpell(1804);	// Lockpicking
+                //player->learnSpell(11305);	// Sprint (3)
+                //player->learnSpell(5384);	// Feign Death
                 // player->learnSpell(475);	// Remove Curse
 
                 // Add a few teleportation runes
